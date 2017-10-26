@@ -1,0 +1,292 @@
+//https://cdn.materialdesignicons.com/1.1.34/
+@mixin bgblack() {
+    background: #000;
+    color: #fff;
+}
+body{
+  background:#e9ecf3;
+}
+
+.container{
+  .jumbotron{
+    padding: 1rem 2rem;
+    background-color: #FFF;
+    border: 1px solid rgba(236, 238, 239, 1);
+  }
+}
+
+.navbar-inverse{
+  .navbar-nav{
+    .nav-link {
+      color: #FFF;
+    }
+  }
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #16a085;
+}
+.menu-top-bar{
+  background:#16a085;
+  border-color: #16a085;
+}
+.navbar-default {
+    background-color: #16a085;
+    border-color: #16a085;
+}
+
+.navbar-default .navbar-brand {
+    color: #ffffff;
+}
+.navbar-default .navbar-brand:hover {
+    color: #ffffff;
+    background-color:#19846f;
+    border-color: #2e7d32;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #ffffff;
+    background-color: #19846f;
+    border-color: #2e7d32;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #19846f;
+}
+.navbar-default .navbar-nav>li>a:visited, .navbar-default .navbar-brand:visited {
+    color: #ffffff;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #fff;
+    background-color: #19846f;
+}
+
+/*Login*/
+body.login {
+  background: #69a0c7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #69a0c7, #4d779a);
+  background: -moz-linear-gradient(right, #69a0c7, #4d779a);
+  background: -o-linear-gradient(right, #69a0c7, #4d779a);
+  background: linear-gradient(to left, #69a0c7, #4d779a);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+  height: 100%;   
+}
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+span.alert-erro {
+    display: block;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #bf5555;
+    padding-bottom: 4px;
+    color: #d27676;
+    font-size: 14px;
+    text-align: left;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  >h3.login{
+	margin-top:-15px;
+	text-transform:uppercase;
+  }
+  >p.description{
+  	margin:15px 0;
+  	text-align: left;
+  	color:#999;
+  }
+}
+.form input {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.log-mobi {
+    margin-top: -82px;
+    text-align: center;
+    >img{
+      height: 50px;
+    }
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #43A047;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+
+
+.body-charts {
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    margin-left: 5px;
+}
+.text-stat{
+  >h3{
+    margin-top:0;
+  }
+}
+.well {
+    background-color: #eee;
+    border: 0;
+    border-radius: 0px;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+.no-margin {
+    margin: 0;
+}
+
+ul.tabs-analise {
+  background: #f7f7f7;
+  >li{
+      padding:15px;
+  }
+  >li.active{
+    background:#d0d0d0;
+    >a{
+      color:#5f5f5f;
+    }
+  }
+}
+.loading {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  width: 150px;
+  height: 50px;
+  margin-top: -25px;
+  margin-left: -75px;
+  background: rgba(0, 0, 0, 0.71);
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+}
+.content-respostas{
+  margin-bottom:30px;
+}
+table.avaliacao {
+    >thead {
+        >tr.gabarito {
+            >td {
+                @include bgblack();
+            }
+            >th {
+                @include bgblack();
+            }
+        }
+    }
+    >tbody {
+        >tr.gabarito {
+            >td {
+                @include bgblack();
+            }
+            >th {
+                @include bgblack();
+            }
+        }
+        >tr{
+            >td.aluno-nome{
+                font-size:10px;
+            }
+        }
+    }
+    >tfoot{
+        >tr.acertos-total{
+            >td{
+                color:green;
+            }
+        }
+        >tr.erros-total{
+            >td{
+                color:red;
+            }
+        }
+        >tr.nulas-total{
+            >td{
+                color:#000;
+            }
+        }
+    }
+    thead>tr>th, tbody>tr>td, tfoot>tr>td{
+      white-space: nowrap;
+    }
+}
+.uppercase {
+    text-transform: uppercase !important;
+}
+.portlet {
+    margin-top: 0px;
+    margin-bottom: 25px;
+    padding: 0px;
+}
+.portlet.light {
+  padding: 12px 20px 15px 20px;
+  background-color: #fff;
+  >.portlet-title {
+    padding: 0;
+    min-height: 48px;
+    >.caption {
+      color: #666;
+      padding: 10px 0;
+      position: relative;
+      >.caption-subject {
+        font-size: 16px;
+      }
+    }
+  }
+  >.portlet-body {
+    padding-top: 8px;
+    clear: both;
+    >.scroller-footer {
+      margin-top: 10px;
+    }
+  }
+}
+table.las-avaliacao{
+  >tbody{
+    >tr{
+      >td{
+        vertical-align:middle
+      }
+    }
+  }
+}
